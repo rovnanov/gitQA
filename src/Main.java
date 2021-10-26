@@ -5,7 +5,7 @@ class Main {
         int speedOfPlayer1 = 5;
         int speedOfPlayer2 = 0;
         int speedOfPlayer3 = 2;
-        
+
 
         // Допишите здесь логику так, что будет подсчитано и выведено
         // количество игроков, которые выбывают.
@@ -14,7 +14,7 @@ class Main {
 
         int outPlayers = 0;
 
-        if(isGreenLight == false){
+        if(!isGreenLight){
             if(speedOfPlayer1 != 0){
                 outPlayers = outPlayers + 1;
             }
@@ -25,17 +25,7 @@ class Main {
                 outPlayers = outPlayers + 1;
             }
         }
-        if(isGreenLight == true){
-            if(speedOfPlayer1 == 0){
-                outPlayers = outPlayers + 1;
-            }
-            if(speedOfPlayer2 == 0){
-                outPlayers = outPlayers + 1;
-            }
-            if(speedOfPlayer3 == 0){
-                outPlayers = outPlayers +1;
-            }
-        }
+        else outPlayers = 0;
 
         System.out.print("Количество выбывших игроков: ");
         System.out.print(outPlayers);
