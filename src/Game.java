@@ -14,7 +14,7 @@ public class Game {
             }
         }
         else outPlayers = 0;
-        System.out.println("Количество выбывающих игроков " + outPlayers);
+        System.out.println("Количество выбывающих игроков = " + outPlayers);
 
     }
     public static void main(String[] args) {
