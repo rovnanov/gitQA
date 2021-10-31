@@ -10,16 +10,18 @@ public class GameTest {
         boolean actual = Game.isLose(speed);
         boolean expected = false;
 
-        Assertions.assertEquals(actual,expected, "Должен быть FALSE при скорости 10");
+        Assertions.assertEquals(actual, expected, "Должен быть FALSE при скорости 10");
     }
+
     @Test
     public void checkStatusIfSpeed0() {
 
         int speed = 0;
         boolean actual = Game.isLose(speed);
 
-        Assertions.assertEquals(true,actual, "Должен быть TRUE при скорости 0");
+        Assertions.assertEquals(true, actual, "Должен быть TRUE при скорости 0");
     }
+
     @Test
     public void checkStatusIfSpeedNegative() {
 
