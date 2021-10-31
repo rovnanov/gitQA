@@ -5,14 +5,19 @@ public class Game {
 
         boolean result;
 
-        if(isGreen == false){
-            if(speed != 0) result = false;
-            else result = true;
+        if (isGreen == false) {
+            if (speed != 0) {
+                result = false;
+            } else {
+                result = true;
+            }
+        } else {
+            result = true;
         }
-        else result = true;
         return result;
 
     }
+
     public static void main(String[] args) {
 
         boolean status = isLose(0);
