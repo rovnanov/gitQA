@@ -20,8 +20,15 @@ public class Game {
 
     public static void main(String[] args) {
 
-        boolean status = isLose(0);
-        System.out.println("Статус игрока = " + status);
+        boolean status = isLose(1);
+        String condition;
+        if (status == false) {
+            condition = "Не выжил";
+        } else {
+            condition = "Выжил";
+        }
+
+        System.out.println("Статус игрока = " + condition);
 
     }
 }
