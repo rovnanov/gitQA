@@ -31,10 +31,6 @@ public class Game {
                 if (speed[i] != 0) {
                     LoseCountArray[o] = speed[i];
                     o = o + 1;
-                } else {
-                    LoseCountArray[i] = speed[i + 1];
-                    i = i + 1;
-                    o = o + 1;
                 }
             }
         }
